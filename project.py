@@ -193,7 +193,8 @@ def main():
                             
                         elif main_class == "Fruit":
                             sub_class, sub_conf = models["oznet"].predict(temp_path)
-                            
+                            sub_class = sub_class.lower()
+                            sub_class = replace_special_chars(sub_class)
                             cal_val = calorie_map.get(sub_class, "Unknown")
                             cal_str = f"{cal_val} cal/g" if cal_val != "Unknown" else "Data unavailable"
                             

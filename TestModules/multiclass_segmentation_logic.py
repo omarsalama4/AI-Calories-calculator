@@ -59,24 +59,60 @@ class FruitMulticlassSegmenter:
         return (color_mask * 255).astype(np.uint8)
 
     def _create_legend(self, unique_classes):
-        width = 250
-        legend = np.ones((self.img_height, width, 3), dtype=np.uint8) * 255
-        y_offset = 40
-        cv2.putText(legend, "Detected Fruits:", (10, 25), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,0,0), 2)
-        
-        if len(unique_classes) <= 1:
-            cv2.putText(legend, "None", (20, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0,0,0), 1)
+        width = 280  # Increased width slightly for better padding
+        # Use a slight off-white background (Light Gray) instead of harsh white
+        bg_color = (245, 245, 245) 
+        legend = np.ones((self.img_height, width, 3), dtype=np.uint8)
+        legend[:] = bg_color
+    
+        # Layout Config
+        start_x = 20
+        text_color = (40, 40, 40) # Dark gray text is softer than pure black
+        font = cv2.FONT_HERSHEY_SIMPLEX
+    
+        # --- Header ---
+        cv2.putText(legend, "Detected Fruits:", (start_x, 35), font, 0.8, text_color, 2, cv2.LINE_AA)
+        # Add a separator line under the header
+        cv2.line(legend, (start_x, 50), (width - start_x, 50), (200, 200, 200), 2)
+
+        y_offset = 90
+        box_size = 20  # Size of the color square
+    
+        # --- Handle Empty Case ---
+        if len(unique_classes) <= 1: # Assuming class 0 is background
+            cv2.putText(legend, "None detected", (start_x, y_offset), font, 0.7, (100, 100, 100), 1, cv2.LINE_AA)
             return legend
 
+        # --- Draw Classes ---
         for cls_idx in unique_classes:
-            if cls_idx == 0: continue
+            if cls_idx == 0: continue # Skip background
+        
+            # Color processing
             rgba = self.custom_cmap(cls_idx / (self.n_classes - 1))
             color_bgr = (int(rgba[2]*255), int(rgba[1]*255), int(rgba[0]*255))
-            cv2.rectangle(legend, (15, y_offset-15), (35, y_offset+5), color_bgr, -1)
-            cv2.rectangle(legend, (15, y_offset-15), (35, y_offset+5), (0,0,0), 1)
+        
+            # 1. Draw the Color Box (Filled)
+            cv2.rectangle(legend, (start_x, y_offset - box_size), 
+                          (start_x + box_size, y_offset), color_bgr, -1)
+        
+            # 2. Draw Box Border (for contrast against light colors)
+            cv2.rectangle(legend, (start_x, y_offset - box_size), 
+                      (start_x + box_size, y_offset), (180, 180, 180), 1)
+        
+            # 3. Draw Text (Vertically centered relative to the box)
             fruit_name = self.class_to_fruit.get(cls_idx, f"Class {cls_idx}")
-            cv2.putText(legend, fruit_name, (45, y_offset), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0,0,0), 1)
-            y_offset += 35
+        
+            # Get text size to align it perfectly
+            (text_w, text_h), baseline = cv2.getTextSize(fruit_name, font, 0.6, 1)
+        
+            # Calculate text Y position so it centers with the box
+            text_y = y_offset - (box_size // 2) + (text_h // 2)
+        
+            cv2.putText(legend, fruit_name, (start_x + box_size + 15, text_y), 
+                        font, 0.65, text_color, 1, cv2.LINE_AA)
+        
+            y_offset += 45 # Increased spacing between rows
+
         return legend
 
     def predict(self, image_path):
