@@ -21,7 +21,7 @@ FOOD_CAL_FILE = "TestModules\Food_cal.txt"
 
 MODEL_PATHS = {
     "binary_clf": "FoodFruitClassification/model_1.pth",
-    "oz_subcategory": "FruitClassification/FruitClassification.pth",
+    "oz_subcategory": "FruitClassification/FruitClassification_1.pth",
     "few_shot": "One-Few shot model/SWIN_ProtoNet/swin_protonet_hyperparameters.pth",
     "bin_seg": "Fruit binary Segmentation/best_fruit_segmentation.pth",
     "multi_seg": "Fruit Multiclass Segmentation/best_model_multiclass.pth"

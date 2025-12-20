@@ -12,7 +12,7 @@ from tqdm import tqdm
 # ==========================================
 # 1. CONFIGURATION
 # ==========================================
-INPUT_FOLDER = "test"
+INPUT_FOLDER = "Test Cases Structure/Integerated Test"
 OUTPUT_FOLDER = "test_results"   
 MODEL_PATH = "Fruit Multiclass Segmentation\\best_model_multiclass.pth"    
 IMG_HEIGHT = 512

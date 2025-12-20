@@ -12,7 +12,7 @@ import segmentation_models_pytorch as smp
 # ==================== CONFIGURATION ====================
 # Update these paths to match your project folders
 MODEL_PATH = 'Fruit binary Segmentation\\best_fruit_segmentation.pth'  # Path to your saved .pth file
-INPUT_FOLDER = 'test'                 # Folder containing images to test
+INPUT_FOLDER = 'Test Cases Structure/Integerated Test'                 # Folder containing images to test
 OUTPUT_FOLDER = 'test_results'               # Folder where results will be saved
 IMAGE_SIZE = 256                             # Must match training size
 THRESHOLD = 0.5                              # Probability threshold for binary mask
