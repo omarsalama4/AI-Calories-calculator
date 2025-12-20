@@ -1,0 +1,2588 @@
+================================================================================
+Training Session Started: 2025-12-18 02:31:49
+================================================================================
+
+Device: cuda
+GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+VRAM: 4.0 GB
+
+Hyperparameters:
+  Encoder: resnet34
+  Batch Size: 16
+  Learning Rate: 0.0001
+  Image Size: 224
+  Max Epochs: 100
+  Workers: 4
+  Early Stop Patience: 15
+
+Searching in: Data/Fruit/Train
+Found 30 fruit folders: ['Apple_Gala', 'Apple_Golden Delicious', 'Avocado', 'Banana', 'Berry', 'Burmese Grape', 'Carambola', 'Date Palm', 'Dragon', 'Elephant Apple', 'Grape', 'Green Coconut', 'Guava', 'Hog Plum', 'Kiwi', 'Lichi', 'Malta', 'Mango Golden Queen', 'Mango_Alphonso', 'Mango_Amrapali', 'Mango_Bari', 'Mango_Himsagar', 'Olive', 'Orange', 'Palm', 'Persimmon', 'Pineapple', 'Pomegranate', 'Watermelon', 'White Pear']
+  Apple_Gala: 58 pairs
+  Apple_Golden Delicious: 50 pairs
+  Avocado: 65 pairs
+  Banana: 75 pairs
+  Berry: 55 pairs
+  Burmese Grape: 71 pairs
+  Carambola: 93 pairs
+  Date Palm: 140 pairs
+  Dragon: 89 pairs
+  Elephant Apple: 74 pairs
+  Grape: 75 pairs
+  Green Coconut: 30 pairs
+  Guava: 48 pairs
+  Hog Plum: 84 pairs
+  Kiwi: 54 pairs
+  Lichi: 41 pairs
+  Malta: 43 pairs
+  Mango Golden Queen: 9 pairs
+  Mango_Alphonso: 38 pairs
+  Mango_Amrapali: 60 pairs
+  Mango_Bari: 50 pairs
+  Mango_Himsagar: 78 pairs
+  Olive: 44 pairs
+  Orange: 76 pairs
+  Palm: 52 pairs
+  Persimmon: 26 pairs
+  Pineapple: 58 pairs
+  Pomegranate: 54 pairs
+  Watermelon: 35 pairs
+  White Pear: 34 pairs
+Total loaded: 1759 pairs
+
+Class imbalance (pos_weight): 1.50
+
+Searching in: Data/Fruit/Validation
+Found 30 fruit folders: ['Apple_Gala', 'Apple_Golden Delicious', 'Avocado', 'Banana', 'Berry', 'Burmese Grape', 'Carambola', 'Date Palm', 'Dragon', 'Elephant Apple', 'Grape', 'Green Coconut', 'Guava', 'Hog Plum', 'Kiwi', 'Lichi', 'Malta', 'Mango Golden Queen', 'Mango_Alphonso', 'Mango_Amrapali', 'Mango_Bari', 'Mango_Himsagar', 'Olive', 'Orange', 'Palm', 'Persimmon', 'Pineapple', 'Pomegranate', 'Watermelon', 'White Pear']
+  Apple_Gala: 5 pairs
+  Apple_Golden Delicious: 5 pairs
+  Avocado: 5 pairs
+  Banana: 5 pairs
+  Berry: 5 pairs
+  Burmese Grape: 5 pairs
+  Carambola: 5 pairs
+  Date Palm: 5 pairs
+  Dragon: 5 pairs
+  Elephant Apple: 5 pairs
+  Grape: 5 pairs
+  Green Coconut: 5 pairs
+  Guava: 5 pairs
+  Hog Plum: 5 pairs
+  Kiwi: 5 pairs
+  Lichi: 5 pairs
+  Malta: 5 pairs
+  Mango Golden Queen: 5 pairs
+  Mango_Alphonso: 5 pairs
+  Mango_Amrapali: 5 pairs
+  Mango_Bari: 5 pairs
+  Mango_Himsagar: 5 pairs
+  Olive: 5 pairs
+  Orange: 5 pairs
+  Palm: 5 pairs
+  Persimmon: 5 pairs
+  Pineapple: 5 pairs
+  Pomegranate: 5 pairs
+  Watermelon: 5 pairs
+  White Pear: 5 pairs
+Total loaded: 150 pairs
+
+Class imbalance (pos_weight): 1.63
+
+Model: 24,436,369 total params, 24,436,369 trainable
+
+
+============================================================
+Epoch 1/100
+============================================================
+
+Train - Loss: 0.2819, Dice: 0.7196, IoU: 0.5764
+Val   - Loss: 0.1874, Dice: 0.9639, IoU: 0.9317
+LR: 0.000100
+Epoch time: 45.9s
+Saved BEST model (Dice=0.9639)
+
+============================================================
+Epoch 2/100
+============================================================
+
+Train - Loss: 0.1690, Dice: 0.8163, IoU: 0.6993
+Val   - Loss: 0.1337, Dice: 0.9760, IoU: 0.9545
+LR: 0.000100
+Epoch time: 15.7s
+Saved BEST model (Dice=0.9760)
+
+============================================================
+Epoch 3/100
+============================================================
+
+Train - Loss: 0.1222, Dice: 0.8648, IoU: 0.7687
+Val   - Loss: 0.1000, Dice: 0.9794, IoU: 0.9610
+LR: 0.000100
+Epoch time: 15.6s
+Saved BEST model (Dice=0.9794)
+
+============================================================
+Epoch 4/100
+============================================================
+
+Train - Loss: 0.0922, Dice: 0.8987, IoU: 0.8200
+Val   - Loss: 0.0803, Dice: 0.9812, IoU: 0.9645
+LR: 0.000100
+Epoch time: 15.7s
+Saved BEST model (Dice=0.9812)
+
+============================================================
+Epoch 5/100
+============================================================
+
+Train - Loss: 0.0726, Dice: 0.9213, IoU: 0.8571
+Val   - Loss: 0.0658, Dice: 0.9789, IoU: 0.9601
+LR: 0.000099
+Epoch time: 16.0s
+
+============================================================
+Epoch 6/100
+============================================================
+
+Train - Loss: 0.0584, Dice: 0.9388, IoU: 0.8868
+Val   - Loss: 0.0558, Dice: 0.9810, IoU: 0.9644
+LR: 0.000099
+Epoch time: 15.8s
+
+============================================================
+Epoch 7/100
+============================================================
+
+Train - Loss: 0.0478, Dice: 0.9511, IoU: 0.9083
+Val   - Loss: 0.0482, Dice: 0.9836, IoU: 0.9691
+LR: 0.000099
+Epoch time: 16.0s
+Saved BEST model (Dice=0.9836)
+
+============================================================
+Epoch 8/100
+============================================================
+
+Train - Loss: 0.0437, Dice: 0.9571, IoU: 0.9191
+Val   - Loss: 0.0493, Dice: 0.9813, IoU: 0.9651
+LR: 0.000098
+Epoch time: 16.0s
+EarlyStopping: 1/15
+
+============================================================
+Epoch 9/100
+============================================================
+
+Train - Loss: 0.0394, Dice: 0.9628, IoU: 0.9294
+Val   - Loss: 0.0452, Dice: 0.9797, IoU: 0.9624
+LR: 0.000098
+Epoch time: 15.9s
+
+============================================================
+Epoch 10/100
+============================================================
+
+Train - Loss: 0.0364, Dice: 0.9665, IoU: 0.9362
+Val   - Loss: 0.0421, Dice: 0.9820, IoU: 0.9663
+LR: 0.000098
+Epoch time: 15.7s
+
+============================================================
+Epoch 11/100
+============================================================
+
+Train - Loss: 0.0333, Dice: 0.9700, IoU: 0.9426
+Val   - Loss: 0.0437, Dice: 0.9812, IoU: 0.9648
+LR: 0.000097
+Epoch time: 15.8s
+EarlyStopping: 1/15
+
+============================================================
+Epoch 12/100
+============================================================
+
+Train - Loss: 0.0307, Dice: 0.9726, IoU: 0.9474
+Val   - Loss: 0.0348, Dice: 0.9833, IoU: 0.9687
+LR: 0.000096
+Epoch time: 16.0s
+
+============================================================
+Epoch 13/100
+============================================================
+
+Train - Loss: 0.0291, Dice: 0.9744, IoU: 0.9509
+Val   - Loss: 0.0439, Dice: 0.9821, IoU: 0.9668
+LR: 0.000096
+Epoch time: 16.1s
+EarlyStopping: 1/15
+
+============================================================
+Epoch 14/100
+============================================================
+
+Train - Loss: 0.0281, Dice: 0.9756, IoU: 0.9531
+Val   - Loss: 0.0425, Dice: 0.9814, IoU: 0.9653
+LR: 0.000095
+Epoch time: 15.9s
+EarlyStopping: 2/15
+
+============================================================
+Epoch 15/100
+============================================================
+
+Train - Loss: 0.0280, Dice: 0.9762, IoU: 0.9543
+Val   - Loss: 0.0353, Dice: 0.9835, IoU: 0.9690
+LR: 0.000095
+Epoch time: 15.9s
+EarlyStopping: 3/15
+
+============================================================
+Epoch 16/100
+============================================================
+
+Train - Loss: 0.0254, Dice: 0.9783, IoU: 0.9581
+Val   - Loss: 0.0409, Dice: 0.9821, IoU: 0.9675
+LR: 0.000094
+Epoch time: 15.8s
+EarlyStopping: 4/15
+
+============================================================
+Epoch 17/100
+============================================================
+
+Train - Loss: 0.0244, Dice: 0.9793, IoU: 0.9601
+Val   - Loss: 0.0341, Dice: 0.9837, IoU: 0.9694
+LR: 0.000093
+Epoch time: 15.9s
+EarlyStopping: 5/15
+
+============================================================
+Epoch 18/100
+============================================================
+
+Train - Loss: 0.0241, Dice: 0.9797, IoU: 0.9607
+Val   - Loss: 0.0326, Dice: 0.9842, IoU: 0.9702
+LR: 0.000092
+Epoch time: 15.7s
+Saved BEST model (Dice=0.9842)
+
+============================================================
+Epoch 19/100
+============================================================
+
+Train - Loss: 0.0242, Dice: 0.9802, IoU: 0.9618
+Val   - Loss: 0.0322, Dice: 0.9833, IoU: 0.9684
+LR: 0.000091
+Epoch time: 15.7s
+EarlyStopping: 1/15
+
+============================================================
+Epoch 20/100
+============================================================
+
+Train - Loss: 0.0225, Dice: 0.9813, IoU: 0.9639
+Val   - Loss: 0.0389, Dice: 0.9824, IoU: 0.9670
+LR: 0.000090
+Epoch time: 16.3s
+EarlyStopping: 2/15
+
+============================================================
+Epoch 21/100
+============================================================
+
+Train - Loss: 0.0226, Dice: 0.9816, IoU: 0.9644
+Val   - Loss: 0.0385, Dice: 0.9818, IoU: 0.9662
+LR: 0.000090
+Epoch time: 15.6s
+EarlyStopping: 3/15
+
+============================================================
+Epoch 22/100
+============================================================
+
+Train - Loss: 0.0215, Dice: 0.9825, IoU: 0.9660
+Val   - Loss: 0.0365, Dice: 0.9833, IoU: 0.9686
+LR: 0.000089
+Epoch time: 15.8s
+EarlyStopping: 4/15
+
+============================================================
+Epoch 23/100
+============================================================
+
+Train - Loss: 0.0230, Dice: 0.9815, IoU: 0.9644
+Val   - Loss: 0.0332, Dice: 0.9834, IoU: 0.9690
+LR: 0.000088
+Epoch time: 15.9s
+EarlyStopping: 5/15
+
+============================================================
+Epoch 24/100
+============================================================
+
+Train - Loss: 0.0208, Dice: 0.9833, IoU: 0.9676
+Val   - Loss: 0.0362, Dice: 0.9834, IoU: 0.9688
+LR: 0.000086
+Epoch time: 15.7s
+EarlyStopping: 6/15
+
+============================================================
+Epoch 25/100
+============================================================
+
+Train - Loss: 0.0202, Dice: 0.9836, IoU: 0.9682
+Val   - Loss: 0.0320, Dice: 0.9840, IoU: 0.9700
+LR: 0.000085
+Epoch time: 15.6s
+EarlyStopping: 7/15
+
+============================================================
+Epoch 26/100
+============================================================
+
+Train - Loss: 0.0194, Dice: 0.9842, IoU: 0.9694
+Val   - Loss: 0.0371, Dice: 0.9839, IoU: 0.9698
+LR: 0.000084
+Epoch time: 15.7s
+EarlyStopping: 8/15
+
+============================================================
+Epoch 27/100
+============================================================
+
+Train - Loss: 0.0195, Dice: 0.9843, IoU: 0.9695
+Val   - Loss: 0.0349, Dice: 0.9834, IoU: 0.9692
+LR: 0.000083
+Epoch time: 15.6s
+EarlyStopping: 9/15
+
+============================================================
+Epoch 28/100
+============================================================
+
+Train - Loss: 0.0187, Dice: 0.9849, IoU: 0.9705
+Val   - Loss: 0.0351, Dice: 0.9835, IoU: 0.9693
+LR: 0.000082
+Epoch time: 15.6s
+EarlyStopping: 10/15
+
+============================================================
+Epoch 29/100
+============================================================
+
+Train - Loss: 0.0192, Dice: 0.9847, IoU: 0.9703
+Val   - Loss: 0.0333, Dice: 0.9844, IoU: 0.9709
+LR: 0.000081
+Epoch time: 15.8s
+Saved BEST model (Dice=0.9844)
+EarlyStopping: 11/15
+
+============================================================
+Epoch 30/100
+============================================================
+
+Train - Loss: 0.0179, Dice: 0.9856, IoU: 0.9720
+Val   - Loss: 0.0347, Dice: 0.9842, IoU: 0.9706
+LR: 0.000079
+Epoch time: 15.8s
+EarlyStopping: 12/15
+
+============================================================
+Epoch 31/100
+============================================================
+
+Train - Loss: 0.0171, Dice: 0.9864, IoU: 0.9734
+Val   - Loss: 0.0336, Dice: 0.9848, IoU: 0.9715
+LR: 0.000078
+Epoch time: 15.7s
+Saved BEST model (Dice=0.9848)
+EarlyStopping: 13/15
+
+============================================================
+Epoch 32/100
+============================================================
+
+Train - Loss: 0.0166, Dice: 0.9867, IoU: 0.9739
+Val   - Loss: 0.0289, Dice: 0.9847, IoU: 0.9711
+LR: 0.000077
+Epoch time: 15.7s
+
+============================================================
+Epoch 33/100
+============================================================
+
+Train - Loss: 0.0164, Dice: 0.9870, IoU: 0.9746
+Val   - Loss: 0.0323, Dice: 0.9862, IoU: 0.9738
+LR: 0.000075
+Epoch time: 15.7s
+Saved BEST model (Dice=0.9862)
+EarlyStopping: 1/15
+
+============================================================
+Epoch 34/100
+============================================================
+
+Train - Loss: 0.0175, Dice: 0.9861, IoU: 0.9729
+Val   - Loss: 0.0346, Dice: 0.9857, IoU: 0.9730
+LR: 0.000074
+Epoch time: 15.7s
+EarlyStopping: 2/15
+
+============================================================
+Epoch 35/100
+============================================================
+
+Train - Loss: 0.0164, Dice: 0.9870, IoU: 0.9747
+Val   - Loss: 0.0297, Dice: 0.9872, IoU: 0.9757
+LR: 0.000073
+Epoch time: 16.0s
+Saved BEST model (Dice=0.9872)
+EarlyStopping: 3/15
+
+============================================================
+Epoch 36/100
+============================================================
+
+Train - Loss: 0.0152, Dice: 0.9880, IoU: 0.9764
+Val   - Loss: 0.0316, Dice: 0.9863, IoU: 0.9741
+LR: 0.000071
+Epoch time: 16.2s
+EarlyStopping: 4/15
+
+============================================================
+Epoch 37/100
+============================================================
+
+Train - Loss: 0.0153, Dice: 0.9878, IoU: 0.9761
+Val   - Loss: 0.0375, Dice: 0.9840, IoU: 0.9702
+LR: 0.000070
+Epoch time: 15.8s
+EarlyStopping: 5/15
+
+============================================================
+Epoch 38/100
+============================================================
+
+Train - Loss: 0.0150, Dice: 0.9880, IoU: 0.9765
+Val   - Loss: 0.0342, Dice: 0.9855, IoU: 0.9727
+LR: 0.000068
+Epoch time: 16.5s
+EarlyStopping: 6/15
+
+============================================================
+Epoch 39/100
+============================================================
+
+Train - Loss: 0.0161, Dice: 0.9876, IoU: 0.9757
+Val   - Loss: 0.0315, Dice: 0.9868, IoU: 0.9751
+LR: 0.000067
+Epoch time: 18.2s
+EarlyStopping: 7/15
+
+============================================================
+Epoch 40/100
+============================================================
+
+Train - Loss: 0.0145, Dice: 0.9885, IoU: 0.9774
+Val   - Loss: 0.0401, Dice: 0.9839, IoU: 0.9704
+LR: 0.000065
+Epoch time: 17.0s
+EarlyStopping: 8/15
+
+============================================================
+Epoch 41/100
+============================================================
+
+Train - Loss: 0.0153, Dice: 0.9879, IoU: 0.9764
+Val   - Loss: 0.0370, Dice: 0.9846, IoU: 0.9712
+LR: 0.000064
+Epoch time: 17.1s
+EarlyStopping: 9/15
+
+============================================================
+Epoch 42/100
+============================================================
+
+Train - Loss: 0.0157, Dice: 0.9878, IoU: 0.9761
+Val   - Loss: 0.0351, Dice: 0.9844, IoU: 0.9709
+LR: 0.000062
+Epoch time: 15.7s
+EarlyStopping: 10/15
+
+============================================================
+Epoch 43/100
+============================================================
+
+Train - Loss: 0.0149, Dice: 0.9883, IoU: 0.9771
+Val   - Loss: 0.0393, Dice: 0.9835, IoU: 0.9692
+LR: 0.000061
+Epoch time: 16.0s
+EarlyStopping: 11/15
+
+============================================================
+Epoch 44/100
+============================================================
+
+Train - Loss: 0.0146, Dice: 0.9886, IoU: 0.9777
+Val   - Loss: 0.0392, Dice: 0.9836, IoU: 0.9695
+LR: 0.000059
+Epoch time: 15.7s
+EarlyStopping: 12/15
+
+============================================================
+Epoch 45/100
+============================================================
+
+Train - Loss: 0.0140, Dice: 0.9891, IoU: 0.9786
+Val   - Loss: 0.0403, Dice: 0.9834, IoU: 0.9692
+LR: 0.000058
+Epoch time: 15.9s
+EarlyStopping: 13/15
+
+============================================================
+Epoch 46/100
+============================================================
+
+Train - Loss: 0.0147, Dice: 0.9885, IoU: 0.9776
+Val   - Loss: 0.0398, Dice: 0.9838, IoU: 0.9700
+LR: 0.000056
+Epoch time: 15.8s
+EarlyStopping: 14/15
+
+============================================================
+Epoch 47/100
+============================================================
+
+Train - Loss: 0.0131, Dice: 0.9894, IoU: 0.9791
+Val   - Loss: 0.0378, Dice: 0.9848, IoU: 0.9715
+LR: 0.000055
+Epoch time: 15.9s
+EarlyStopping: 15/15
+
+Early stop at epoch 47
+
+============================================================
+Training Complete!
+Best Val Dice: 0.9872
+Total time: 13.0 minutes
+============================================================
+
+
+================================================================================
+Training Session Started: 2025-12-18 02:53:56
+================================================================================
+
+Device: cuda
+GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+VRAM: 4.0 GB
+
+
+Hyperparameters:
+  Encoder: se_resnext50_32x4d
+  Batch Size: 16
+  Learning Rate: 0.0001
+  Image Size: 256
+  Max Epochs: 150
+  Workers: 4
+  Early Stop Patience: 20
+
+Searching in: Data/Fruit/Train
+Found 30 fruit folders: ['Apple_Gala', 'Apple_Golden Delicious', 'Avocado', 'Banana', 'Berry', 'Burmese Grape', 'Carambola', 'Date Palm', 'Dragon', 'Elephant Apple', 'Grape', 'Green Coconut', 'Guava', 'Hog Plum', 'Kiwi', 'Lichi', 'Malta', 'Mango Golden Queen', 'Mango_Alphonso', 'Mango_Amrapali', 'Mango_Bari', 'Mango_Himsagar', 'Olive', 'Orange', 'Palm', 'Persimmon', 'Pineapple', 'Pomegranate', 'Watermelon', 'White Pear']
+  Apple_Gala: 58 pairs
+  Apple_Golden Delicious: 50 pairs
+  Avocado: 65 pairs
+  Banana: 75 pairs
+  Berry: 55 pairs
+  Burmese Grape: 71 pairs
+  Carambola: 93 pairs
+  Date Palm: 140 pairs
+  Dragon: 89 pairs
+  Elephant Apple: 74 pairs
+  Grape: 75 pairs
+  Green Coconut: 30 pairs
+  Guava: 48 pairs
+  Hog Plum: 84 pairs
+  Kiwi: 54 pairs
+  Lichi: 41 pairs
+  Malta: 43 pairs
+  Mango Golden Queen: 9 pairs
+  Mango_Alphonso: 38 pairs
+  Mango_Amrapali: 60 pairs
+  Mango_Bari: 50 pairs
+  Mango_Himsagar: 78 pairs
+  Olive: 44 pairs
+  Orange: 76 pairs
+  Palm: 52 pairs
+  Persimmon: 26 pairs
+  Pineapple: 58 pairs
+  Pomegranate: 54 pairs
+  Watermelon: 35 pairs
+  White Pear: 34 pairs
+Total loaded: 1759 pairs
+
+Class imbalance (pos_weight): 1.50
+
+Searching in: Data/Fruit/Validation
+Found 30 fruit folders: ['Apple_Gala', 'Apple_Golden Delicious', 'Avocado', 'Banana', 'Berry', 'Burmese Grape', 'Carambola', 'Date Palm', 'Dragon', 'Elephant Apple', 'Grape', 'Green Coconut', 'Guava', 'Hog Plum', 'Kiwi', 'Lichi', 'Malta', 'Mango Golden Queen', 'Mango_Alphonso', 'Mango_Amrapali', 'Mango_Bari', 'Mango_Himsagar', 'Olive', 'Orange', 'Palm', 'Persimmon', 'Pineapple', 'Pomegranate', 'Watermelon', 'White Pear']
+  Apple_Gala: 5 pairs
+  Apple_Golden Delicious: 5 pairs
+  Avocado: 5 pairs
+  Banana: 5 pairs
+  Berry: 5 pairs
+  Burmese Grape: 5 pairs
+  Carambola: 5 pairs
+  Date Palm: 5 pairs
+  Dragon: 5 pairs
+  Elephant Apple: 5 pairs
+  Grape: 5 pairs
+  Green Coconut: 5 pairs
+  Guava: 5 pairs
+  Hog Plum: 5 pairs
+  Kiwi: 5 pairs
+  Lichi: 5 pairs
+  Malta: 5 pairs
+  Mango Golden Queen: 5 pairs
+  Mango_Alphonso: 5 pairs
+  Mango_Amrapali: 5 pairs
+  Mango_Bari: 5 pairs
+  Mango_Himsagar: 5 pairs
+  Olive: 5 pairs
+  Orange: 5 pairs
+  Palm: 5 pairs
+  Persimmon: 5 pairs
+  Pineapple: 5 pairs
+  Pomegranate: 5 pairs
+  Watermelon: 5 pairs
+  White Pear: 5 pairs
+Total loaded: 150 pairs
+
+Class imbalance (pos_weight): 1.63
+
+Model: 34,523,969 total params, 34,523,969 trainable
+
+
+============================================================
+Epoch 1/150
+============================================================
+
+Train - Loss: 0.2893, Dice: 0.7131, IoU: 0.5687
+Val   - Loss: 0.1788, Dice: 0.9692, IoU: 0.9419
+LR: 0.000100
+Epoch time: 71.1s
+ Saved BEST model (Dice=0.9692)
+
+============================================================
+Epoch 2/150
+============================================================
+
+Train - Loss: 0.1450, Dice: 0.8403, IoU: 0.7319
+Val   - Loss: 0.1192, Dice: 0.9771, IoU: 0.9571
+LR: 0.000100
+Epoch time: 32.1s
+ Saved BEST model (Dice=0.9771)
+
+============================================================
+Epoch 3/150
+============================================================
+
+Train - Loss: 0.0986, Dice: 0.8901, IoU: 0.8064
+Val   - Loss: 0.0853, Dice: 0.9819, IoU: 0.9667
+LR: 0.000100
+Epoch time: 31.3s
+ Saved BEST model (Dice=0.9819)
+
+============================================================
+Epoch 4/150
+============================================================
+
+Train - Loss: 0.0741, Dice: 0.9188, IoU: 0.8526
+Val   - Loss: 0.0644, Dice: 0.9834, IoU: 0.9685
+LR: 0.000100
+Epoch time: 31.5s
+ Saved BEST model (Dice=0.9834)
+
+============================================================
+Epoch 5/150
+============================================================
+
+Train - Loss: 0.0588, Dice: 0.9369, IoU: 0.8832
+Val   - Loss: 0.0577, Dice: 0.9846, IoU: 0.9713
+LR: 0.000100
+Epoch time: 30.8s
+ Saved BEST model (Dice=0.9846)
+
+============================================================
+Epoch 6/150
+============================================================
+
+Train - Loss: 0.0478, Dice: 0.9497, IoU: 0.9057
+Val   - Loss: 0.0483, Dice: 0.9832, IoU: 0.9691
+LR: 0.000100
+Epoch time: 30.8s
+
+============================================================
+Epoch 7/150
+============================================================
+
+Train - Loss: 0.0404, Dice: 0.9582, IoU: 0.9209
+Val   - Loss: 0.0448, Dice: 0.9838, IoU: 0.9698
+LR: 0.000099
+Epoch time: 30.8s
+
+============================================================
+Epoch 8/150
+============================================================
+
+Train - Loss: 0.0359, Dice: 0.9641, IoU: 0.9318
+Val   - Loss: 0.0409, Dice: 0.9856, IoU: 0.9732
+LR: 0.000099
+Epoch time: 30.7s
+ Saved BEST model (Dice=0.9856)
+
+============================================================
+Epoch 9/150
+============================================================
+
+Train - Loss: 0.0306, Dice: 0.9698, IoU: 0.9420
+Val   - Loss: 0.0420, Dice: 0.9845, IoU: 0.9715
+LR: 0.000099
+Epoch time: 31.1s
+EarlyStopping: 1/20
+
+============================================================
+Epoch 10/150
+============================================================
+
+Train - Loss: 0.0277, Dice: 0.9730, IoU: 0.9481
+Val   - Loss: 0.0370, Dice: 0.9858, IoU: 0.9735
+LR: 0.000099
+Epoch time: 31.0s
+ Saved BEST model (Dice=0.9858)
+
+============================================================
+Epoch 11/150
+============================================================
+
+Train - Loss: 0.0262, Dice: 0.9751, IoU: 0.9521
+Val   - Loss: 0.0328, Dice: 0.9873, IoU: 0.9761
+LR: 0.000099
+Epoch time: 30.8s
+ Saved BEST model (Dice=0.9873)
+
+============================================================
+Epoch 12/150
+============================================================
+
+Train - Loss: 0.0237, Dice: 0.9780, IoU: 0.9575
+Val   - Loss: 0.0380, Dice: 0.9855, IoU: 0.9730
+LR: 0.000098
+Epoch time: 30.8s
+EarlyStopping: 1/20
+
+============================================================
+Epoch 13/150
+============================================================
+
+Train - Loss: 0.0220, Dice: 0.9801, IoU: 0.9614
+Val   - Loss: 0.0335, Dice: 0.9856, IoU: 0.9733
+LR: 0.000098
+Epoch time: 30.5s
+EarlyStopping: 2/20
+
+============================================================
+Epoch 14/150
+============================================================
+
+Train - Loss: 0.0224, Dice: 0.9799, IoU: 0.9611
+Val   - Loss: 0.0332, Dice: 0.9862, IoU: 0.9742
+LR: 0.000098
+Epoch time: 30.9s
+EarlyStopping: 3/20
+
+============================================================
+Epoch 15/150
+============================================================
+
+Train - Loss: 0.0193, Dice: 0.9829, IoU: 0.9667
+Val   - Loss: 0.0343, Dice: 0.9849, IoU: 0.9723
+LR: 0.000098
+Epoch time: 31.2s
+EarlyStopping: 4/20
+
+============================================================
+Epoch 16/150
+============================================================
+
+Train - Loss: 0.0179, Dice: 0.9844, IoU: 0.9695
+Val   - Loss: 0.0334, Dice: 0.9870, IoU: 0.9758
+LR: 0.000097
+Epoch time: 30.9s
+EarlyStopping: 5/20
+
+============================================================
+Epoch 17/150
+============================================================
+
+Train - Loss: 0.0179, Dice: 0.9843, IoU: 0.9695
+Val   - Loss: 0.0398, Dice: 0.9830, IoU: 0.9691
+LR: 0.000097
+Epoch time: 31.5s
+EarlyStopping: 6/20
+
+============================================================
+Epoch 18/150
+============================================================
+
+Train - Loss: 0.0163, Dice: 0.9857, IoU: 0.9721
+Val   - Loss: 0.0324, Dice: 0.9847, IoU: 0.9719
+LR: 0.000096
+Epoch time: 31.2s
+EarlyStopping: 7/20
+
+============================================================
+Epoch 19/150
+============================================================
+
+Train - Loss: 0.0167, Dice: 0.9859, IoU: 0.9725
+Val   - Loss: 0.0368, Dice: 0.9831, IoU: 0.9697
+LR: 0.000096
+Epoch time: 30.8s
+EarlyStopping: 8/20
+
+============================================================
+Epoch 20/150
+============================================================
+
+Train - Loss: 0.0153, Dice: 0.9869, IoU: 0.9745
+Val   - Loss: 0.0349, Dice: 0.9853, IoU: 0.9732
+LR: 0.000096
+Epoch time: 30.8s
+EarlyStopping: 9/20
+
+============================================================
+Epoch 21/150
+============================================================
+
+Train - Loss: 0.0133, Dice: 0.9887, IoU: 0.9778
+Val   - Loss: 0.0402, Dice: 0.9839, IoU: 0.9709
+LR: 0.000095
+Epoch time: 30.6s
+EarlyStopping: 10/20
+
+============================================================
+Epoch 22/150
+============================================================
+
+Train - Loss: 0.0136, Dice: 0.9884, IoU: 0.9772
+Val   - Loss: 0.0438, Dice: 0.9823, IoU: 0.9685
+LR: 0.000095
+Epoch time: 31.1s
+EarlyStopping: 11/20
+
+============================================================
+Epoch 23/150
+============================================================
+
+Train - Loss: 0.0137, Dice: 0.9885, IoU: 0.9775
+Val   - Loss: 0.0392, Dice: 0.9826, IoU: 0.9684
+LR: 0.000094
+Epoch time: 30.6s
+EarlyStopping: 12/20
+
+============================================================
+Epoch 24/150
+============================================================
+
+Train - Loss: 0.0127, Dice: 0.9892, IoU: 0.9787
+Val   - Loss: 0.0356, Dice: 0.9856, IoU: 0.9735
+LR: 0.000094
+Epoch time: 30.5s
+EarlyStopping: 13/20
+
+============================================================
+Epoch 25/150
+============================================================
+
+Train - Loss: 0.0136, Dice: 0.9887, IoU: 0.9780
+Val   - Loss: 0.0437, Dice: 0.9827, IoU: 0.9689
+LR: 0.000093
+Epoch time: 30.6s
+EarlyStopping: 14/20
+
+============================================================
+Epoch 26/150
+============================================================
+
+Train - Loss: 0.0116, Dice: 0.9902, IoU: 0.9808
+Val   - Loss: 0.0418, Dice: 0.9839, IoU: 0.9711
+LR: 0.000093
+Epoch time: 30.6s
+EarlyStopping: 15/20
+
+============================================================
+Epoch 27/150
+============================================================
+
+Train - Loss: 0.0112, Dice: 0.9906, IoU: 0.9814
+Val   - Loss: 0.0439, Dice: 0.9835, IoU: 0.9702
+LR: 0.000092
+Epoch time: 30.6s
+EarlyStopping: 16/20
+
+============================================================
+Epoch 28/150
+============================================================
+
+Train - Loss: 0.0121, Dice: 0.9900, IoU: 0.9804
+Val   - Loss: 0.0376, Dice: 0.9854, IoU: 0.9735
+LR: 0.000092
+Epoch time: 30.7s
+EarlyStopping: 17/20
+
+============================================================
+Epoch 29/150
+============================================================
+
+Train - Loss: 0.0112, Dice: 0.9907, IoU: 0.9817
+Val   - Loss: 0.0405, Dice: 0.9857, IoU: 0.9740
+LR: 0.000091
+Epoch time: 30.5s
+EarlyStopping: 18/20
+
+============================================================
+Epoch 30/150
+============================================================
+
+Train - Loss: 0.0110, Dice: 0.9910, IoU: 0.9822
+Val   - Loss: 0.0383, Dice: 0.9844, IoU: 0.9716
+LR: 0.000090
+Epoch time: 30.5s
+EarlyStopping: 19/20
+
+============================================================
+Epoch 31/150
+============================================================
+
+Train - Loss: 0.0111, Dice: 0.9908, IoU: 0.9820
+Val   - Loss: 0.0424, Dice: 0.9843, IoU: 0.9719
+LR: 0.000090
+Epoch time: 31.0s
+EarlyStopping: 20/20
+
+ Early stop at epoch 31
+
+============================================================
+Training Complete!
+Best Val Dice: 0.9873
+Total time: 16.7 minutes
+============================================================
+
+
+
+================================================================================
+Training Session Started!
+================================================================================
+
+Device: cuda
+GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+VRAM: 4.0 GB
+
+
+Hyperparameters:
+  Encoder: se_resnext50_32x4d
+  Batch Size: 16
+  Learning Rate: 0.0001
+  Image Size: 256
+  Max Epochs: 150
+  Workers: 4
+  Early Stop Patience: 20
+
+Searching in: Data/Fruit/Train
+Found 30 fruit folders: ['Apple_Gala', 'Apple_Golden Delicious', 'Avocado', 'Banana', 'Berry', 'Burmese Grape', 'Carambola', 'Date Palm', 'Dragon', 'Elephant Apple', 'Grape', 'Green Coconut', 'Guava', 'Hog Plum', 'Kiwi', 'Lichi', 'Malta', 'Mango Golden Queen', 'Mango_Alphonso', 'Mango_Amrapali', 'Mango_Bari', 'Mango_Himsagar', 'Olive', 'Orange', 'Palm', 'Persimmon', 'Pineapple', 'Pomegranate', 'Watermelon', 'White Pear']
+  Apple_Gala: 58 pairs
+  Apple_Golden Delicious: 50 pairs
+  Avocado: 65 pairs
+  Banana: 75 pairs
+  Berry: 55 pairs
+  Burmese Grape: 71 pairs
+  Carambola: 93 pairs
+  Date Palm: 140 pairs
+  Dragon: 89 pairs
+  Elephant Apple: 74 pairs
+  Grape: 75 pairs
+  Green Coconut: 30 pairs
+  Guava: 48 pairs
+  Hog Plum: 84 pairs
+  Kiwi: 54 pairs
+  Lichi: 41 pairs
+  Malta: 43 pairs
+  Mango Golden Queen: 9 pairs
+  Mango_Alphonso: 38 pairs
+  Mango_Amrapali: 60 pairs
+  Mango_Bari: 50 pairs
+  Mango_Himsagar: 78 pairs
+  Olive: 44 pairs
+  Orange: 76 pairs
+  Palm: 52 pairs
+  Persimmon: 26 pairs
+  Pineapple: 58 pairs
+  Pomegranate: 54 pairs
+  Watermelon: 35 pairs
+  White Pear: 34 pairs
+Total loaded: 1759 pairs
+
+Class imbalance (pos_weight): 1.50
+
+Searching in: Data/Fruit/Validation
+Found 30 fruit folders: ['Apple_Gala', 'Apple_Golden Delicious', 'Avocado', 'Banana', 'Berry', 'Burmese Grape', 'Carambola', 'Date Palm', 'Dragon', 'Elephant Apple', 'Grape', 'Green Coconut', 'Guava', 'Hog Plum', 'Kiwi', 'Lichi', 'Malta', 'Mango Golden Queen', 'Mango_Alphonso', 'Mango_Amrapali', 'Mango_Bari', 'Mango_Himsagar', 'Olive', 'Orange', 'Palm', 'Persimmon', 'Pineapple', 'Pomegranate', 'Watermelon', 'White Pear']
+  Apple_Gala: 5 pairs
+  Apple_Golden Delicious: 5 pairs
+  Avocado: 5 pairs
+  Banana: 5 pairs
+  Berry: 5 pairs
+  Burmese Grape: 5 pairs
+  Carambola: 5 pairs
+  Date Palm: 5 pairs
+  Dragon: 5 pairs
+  Elephant Apple: 5 pairs
+  Grape: 5 pairs
+  Green Coconut: 5 pairs
+  Guava: 5 pairs
+  Hog Plum: 5 pairs
+  Kiwi: 5 pairs
+  Lichi: 5 pairs
+  Malta: 5 pairs
+  Mango Golden Queen: 5 pairs
+  Mango_Alphonso: 5 pairs
+  Mango_Amrapali: 5 pairs
+  Mango_Bari: 5 pairs
+  Mango_Himsagar: 5 pairs
+  Olive: 5 pairs
+  Orange: 5 pairs
+  Palm: 5 pairs
+  Persimmon: 5 pairs
+  Pineapple: 5 pairs
+  Pomegranate: 5 pairs
+  Watermelon: 5 pairs
+  White Pear: 5 pairs
+Total loaded: 150 pairs
+
+Class imbalance (pos_weight): 1.63
+
+Model: 34,523,969 total params, 34,523,969 trainable
+
+
+============================================================
+Epoch 1/150
+============================================================
+
+Train - Loss: 0.2893, Dice: 0.7131, IoU: 0.5687
+Val   - Loss: 0.1788, Dice: 0.9692, IoU: 0.9419
+LR: 0.000100
+Epoch time: 71.1s
+ Saved BEST model (Dice=0.9692)
+
+============================================================
+Epoch 2/150
+============================================================
+
+Train - Loss: 0.1450, Dice: 0.8403, IoU: 0.7319
+Val   - Loss: 0.1192, Dice: 0.9771, IoU: 0.9571
+LR: 0.000100
+Epoch time: 32.1s
+ Saved BEST model (Dice=0.9771)
+
+============================================================
+Epoch 3/150
+============================================================
+
+Train - Loss: 0.0986, Dice: 0.8901, IoU: 0.8064
+Val   - Loss: 0.0853, Dice: 0.9819, IoU: 0.9667
+LR: 0.000100
+Epoch time: 31.3s
+ Saved BEST model (Dice=0.9819)
+
+============================================================
+Epoch 4/150
+============================================================
+
+Train - Loss: 0.0741, Dice: 0.9188, IoU: 0.8526
+Val   - Loss: 0.0644, Dice: 0.9834, IoU: 0.9685
+LR: 0.000100
+Epoch time: 31.5s
+ Saved BEST model (Dice=0.9834)
+
+============================================================
+Epoch 5/150
+============================================================
+
+Train - Loss: 0.0588, Dice: 0.9369, IoU: 0.8832
+Val   - Loss: 0.0577, Dice: 0.9846, IoU: 0.9713
+LR: 0.000100
+Epoch time: 30.8s
+ Saved BEST model (Dice=0.9846)
+
+============================================================
+Epoch 6/150
+============================================================
+
+Train - Loss: 0.0478, Dice: 0.9497, IoU: 0.9057
+Val   - Loss: 0.0483, Dice: 0.9832, IoU: 0.9691
+LR: 0.000100
+Epoch time: 30.8s
+
+============================================================
+Epoch 7/150
+============================================================
+
+Train - Loss: 0.0404, Dice: 0.9582, IoU: 0.9209
+Val   - Loss: 0.0448, Dice: 0.9838, IoU: 0.9698
+LR: 0.000099
+Epoch time: 30.8s
+
+============================================================
+Epoch 8/150
+============================================================
+
+Train - Loss: 0.0359, Dice: 0.9641, IoU: 0.9318
+Val   - Loss: 0.0409, Dice: 0.9856, IoU: 0.9732
+LR: 0.000099
+Epoch time: 30.7s
+ Saved BEST model (Dice=0.9856)
+
+============================================================
+Epoch 9/150
+============================================================
+
+Train - Loss: 0.0306, Dice: 0.9698, IoU: 0.9420
+Val   - Loss: 0.0420, Dice: 0.9845, IoU: 0.9715
+LR: 0.000099
+Epoch time: 31.1s
+EarlyStopping: 1/20
+
+============================================================
+Epoch 10/150
+============================================================
+
+Train - Loss: 0.0277, Dice: 0.9730, IoU: 0.9481
+Val   - Loss: 0.0370, Dice: 0.9858, IoU: 0.9735
+LR: 0.000099
+Epoch time: 31.0s
+ Saved BEST model (Dice=0.9858)
+
+============================================================
+Epoch 11/150
+============================================================
+
+Train - Loss: 0.0262, Dice: 0.9751, IoU: 0.9521
+Val   - Loss: 0.0328, Dice: 0.9873, IoU: 0.9761
+LR: 0.000099
+Epoch time: 30.8s
+ Saved BEST model (Dice=0.9873)
+
+============================================================
+Epoch 12/150
+============================================================
+
+Train - Loss: 0.0237, Dice: 0.9780, IoU: 0.9575
+Val   - Loss: 0.0380, Dice: 0.9855, IoU: 0.9730
+LR: 0.000098
+Epoch time: 30.8s
+EarlyStopping: 1/20
+
+============================================================
+Epoch 13/150
+============================================================
+
+Train - Loss: 0.0220, Dice: 0.9801, IoU: 0.9614
+Val   - Loss: 0.0335, Dice: 0.9856, IoU: 0.9733
+LR: 0.000098
+Epoch time: 30.5s
+EarlyStopping: 2/20
+
+============================================================
+Epoch 14/150
+============================================================
+
+Train - Loss: 0.0224, Dice: 0.9799, IoU: 0.9611
+Val   - Loss: 0.0332, Dice: 0.9862, IoU: 0.9742
+LR: 0.000098
+Epoch time: 30.9s
+EarlyStopping: 3/20
+
+============================================================
+Epoch 15/150
+============================================================
+
+Train - Loss: 0.0193, Dice: 0.9829, IoU: 0.9667
+Val   - Loss: 0.0343, Dice: 0.9849, IoU: 0.9723
+LR: 0.000098
+Epoch time: 31.2s
+EarlyStopping: 4/20
+
+============================================================
+Epoch 16/150
+============================================================
+
+Train - Loss: 0.0179, Dice: 0.9844, IoU: 0.9695
+Val   - Loss: 0.0334, Dice: 0.9870, IoU: 0.9758
+LR: 0.000097
+Epoch time: 30.9s
+EarlyStopping: 5/20
+
+============================================================
+Epoch 17/150
+============================================================
+
+Train - Loss: 0.0179, Dice: 0.9843, IoU: 0.9695
+Val   - Loss: 0.0398, Dice: 0.9830, IoU: 0.9691
+LR: 0.000097
+Epoch time: 31.5s
+EarlyStopping: 6/20
+
+============================================================
+Epoch 18/150
+============================================================
+
+Train - Loss: 0.0163, Dice: 0.9857, IoU: 0.9721
+Val   - Loss: 0.0324, Dice: 0.9847, IoU: 0.9719
+LR: 0.000096
+Epoch time: 31.2s
+EarlyStopping: 7/20
+
+============================================================
+Epoch 19/150
+============================================================
+
+Train - Loss: 0.0167, Dice: 0.9859, IoU: 0.9725
+Val   - Loss: 0.0368, Dice: 0.9831, IoU: 0.9697
+LR: 0.000096
+Epoch time: 30.8s
+EarlyStopping: 8/20
+
+============================================================
+Epoch 20/150
+============================================================
+
+Train - Loss: 0.0153, Dice: 0.9869, IoU: 0.9745
+Val   - Loss: 0.0349, Dice: 0.9853, IoU: 0.9732
+LR: 0.000096
+Epoch time: 30.8s
+EarlyStopping: 9/20
+
+============================================================
+Epoch 21/150
+============================================================
+
+Train - Loss: 0.0133, Dice: 0.9887, IoU: 0.9778
+Val   - Loss: 0.0402, Dice: 0.9839, IoU: 0.9709
+LR: 0.000095
+Epoch time: 30.6s
+EarlyStopping: 10/20
+
+============================================================
+Epoch 22/150
+============================================================
+
+Train - Loss: 0.0136, Dice: 0.9884, IoU: 0.9772
+Val   - Loss: 0.0438, Dice: 0.9823, IoU: 0.9685
+LR: 0.000095
+Epoch time: 31.1s
+EarlyStopping: 11/20
+
+============================================================
+Epoch 23/150
+============================================================
+
+Train - Loss: 0.0137, Dice: 0.9885, IoU: 0.9775
+Val   - Loss: 0.0392, Dice: 0.9826, IoU: 0.9684
+LR: 0.000094
+Epoch time: 30.6s
+EarlyStopping: 12/20
+
+============================================================
+Epoch 24/150
+============================================================
+
+Train - Loss: 0.0127, Dice: 0.9892, IoU: 0.9787
+Val   - Loss: 0.0356, Dice: 0.9856, IoU: 0.9735
+LR: 0.000094
+Epoch time: 30.5s
+EarlyStopping: 13/20
+
+============================================================
+Epoch 25/150
+============================================================
+
+Train - Loss: 0.0136, Dice: 0.9887, IoU: 0.9780
+Val   - Loss: 0.0437, Dice: 0.9827, IoU: 0.9689
+LR: 0.000093
+Epoch time: 30.6s
+EarlyStopping: 14/20
+
+============================================================
+Epoch 26/150
+============================================================
+
+Train - Loss: 0.0116, Dice: 0.9902, IoU: 0.9808
+Val   - Loss: 0.0418, Dice: 0.9839, IoU: 0.9711
+LR: 0.000093
+Epoch time: 30.6s
+EarlyStopping: 15/20
+
+============================================================
+Epoch 27/150
+============================================================
+
+Train - Loss: 0.0112, Dice: 0.9906, IoU: 0.9814
+Val   - Loss: 0.0439, Dice: 0.9835, IoU: 0.9702
+LR: 0.000092
+Epoch time: 30.6s
+EarlyStopping: 16/20
+
+============================================================
+Epoch 28/150
+============================================================
+
+Train - Loss: 0.0121, Dice: 0.9900, IoU: 0.9804
+Val   - Loss: 0.0376, Dice: 0.9854, IoU: 0.9735
+LR: 0.000092
+Epoch time: 30.7s
+EarlyStopping: 17/20
+
+============================================================
+Epoch 29/150
+============================================================
+
+Train - Loss: 0.0112, Dice: 0.9907, IoU: 0.9817
+Val   - Loss: 0.0405, Dice: 0.9857, IoU: 0.9740
+LR: 0.000091
+Epoch time: 30.5s
+EarlyStopping: 18/20
+
+============================================================
+Epoch 30/150
+============================================================
+
+Train - Loss: 0.0110, Dice: 0.9910, IoU: 0.9822
+Val   - Loss: 0.0383, Dice: 0.9844, IoU: 0.9716
+LR: 0.000090
+Epoch time: 30.5s
+EarlyStopping: 19/20
+
+============================================================
+Epoch 31/150
+============================================================
+
+Train - Loss: 0.0111, Dice: 0.9908, IoU: 0.9820
+Val   - Loss: 0.0424, Dice: 0.9843, IoU: 0.9719
+LR: 0.000090
+Epoch time: 31.0s
+EarlyStopping: 20/20
+
+ Early stop at epoch 31
+
+============================================================
+Training Complete!
+Best Val Dice: 0.9873
+Total time: 16.7 minutes
+============================================================
+
+
+================================================================================
+Training Session Started: 2025-12-18 03:26:54
+================================================================================
+
+Device: cuda
+GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+VRAM: 4.0 GB
+
+Hyperparameters:
+  Encoder: efficientnet-b3
+  Batch Size: 12
+  Learning Rate: 0.0001
+  Image Size: 288
+  Max Epochs: 150
+  Workers: 4
+  Early Stop Patience: 25
+
+Searching in: Data/Fruit/Train
+Found 30 fruit folders: ['Apple_Gala', 'Apple_Golden Delicious', 'Avocado', 'Banana', 'Berry', 'Burmese Grape', 'Carambola', 'Date Palm', 'Dragon', 'Elephant Apple', 'Grape', 'Green Coconut', 'Guava', 'Hog Plum', 'Kiwi', 'Lichi', 'Malta', 'Mango Golden Queen', 'Mango_Alphonso', 'Mango_Amrapali', 'Mango_Bari', 'Mango_Himsagar', 'Olive', 'Orange', 'Palm', 'Persimmon', 'Pineapple', 'Pomegranate', 'Watermelon', 'White Pear']
+  Apple_Gala: 58 pairs
+  Apple_Golden Delicious: 50 pairs
+  Avocado: 65 pairs
+  Banana: 75 pairs
+  Berry: 55 pairs
+  Burmese Grape: 71 pairs
+  Carambola: 93 pairs
+  Date Palm: 140 pairs
+  Dragon: 89 pairs
+  Elephant Apple: 74 pairs
+  Grape: 75 pairs
+  Green Coconut: 30 pairs
+  Guava: 48 pairs
+  Hog Plum: 84 pairs
+  Kiwi: 54 pairs
+  Lichi: 41 pairs
+  Malta: 43 pairs
+  Mango Golden Queen: 9 pairs
+  Mango_Alphonso: 38 pairs
+  Mango_Amrapali: 60 pairs
+  Mango_Bari: 50 pairs
+  Mango_Himsagar: 78 pairs
+  Olive: 44 pairs
+  Orange: 76 pairs
+  Palm: 52 pairs
+  Persimmon: 26 pairs
+  Pineapple: 58 pairs
+  Pomegranate: 54 pairs
+  Watermelon: 35 pairs
+  White Pear: 34 pairs
+Total loaded: 1759 pairs
+
+Class imbalance (pos_weight): 1.50
+
+Searching in: Data/Fruit/Validation
+Found 30 fruit folders: ['Apple_Gala', 'Apple_Golden Delicious', 'Avocado', 'Banana', 'Berry', 'Burmese Grape', 'Carambola', 'Date Palm', 'Dragon', 'Elephant Apple', 'Grape', 'Green Coconut', 'Guava', 'Hog Plum', 'Kiwi', 'Lichi', 'Malta', 'Mango Golden Queen', 'Mango_Alphonso', 'Mango_Amrapali', 'Mango_Bari', 'Mango_Himsagar', 'Olive', 'Orange', 'Palm', 'Persimmon', 'Pineapple', 'Pomegranate', 'Watermelon', 'White Pear']
+  Apple_Gala: 5 pairs
+  Apple_Golden Delicious: 5 pairs
+  Avocado: 5 pairs
+  Banana: 5 pairs
+  Berry: 5 pairs
+  Burmese Grape: 5 pairs
+  Carambola: 5 pairs
+  Date Palm: 5 pairs
+  Dragon: 5 pairs
+  Elephant Apple: 5 pairs
+  Grape: 5 pairs
+  Green Coconut: 5 pairs
+  Guava: 5 pairs
+  Hog Plum: 5 pairs
+  Kiwi: 5 pairs
+  Lichi: 5 pairs
+  Malta: 5 pairs
+  Mango Golden Queen: 5 pairs
+  Mango_Alphonso: 5 pairs
+  Mango_Amrapali: 5 pairs
+  Mango_Bari: 5 pairs
+  Mango_Himsagar: 5 pairs
+  Olive: 5 pairs
+  Orange: 5 pairs
+  Palm: 5 pairs
+  Persimmon: 5 pairs
+  Pineapple: 5 pairs
+  Pomegranate: 5 pairs
+  Watermelon: 5 pairs
+  White Pear: 5 pairs
+Total loaded: 150 pairs
+
+Class imbalance (pos_weight): 1.63
+
+Model: 13,624,793 total params, 13,624,793 trainable
+
+
+============================================================
+Epoch 1/150
+============================================================
+
+Train - Loss: 0.2735, Dice: 0.7266, IoU: 0.5874
+Val   - Loss: 0.1589, Dice: 0.9761, IoU: 0.9552
+LR: 0.000100
+Epoch time: 164.5s
+ Saved BEST model (Dice=0.9761)
+
+============================================================
+Epoch 2/150
+============================================================
+
+Train - Loss: 0.1069, Dice: 0.8854, IoU: 0.7988
+Val   - Loss: 0.0850, Dice: 0.9800, IoU: 0.9621
+LR: 0.000100
+Epoch time: 110.8s
+ Saved BEST model (Dice=0.9800)
+
+============================================================
+Epoch 3/150
+============================================================
+
+Train - Loss: 0.0691, Dice: 0.9283, IoU: 0.8685
+Val   - Loss: 0.0610, Dice: 0.9832, IoU: 0.9681
+LR: 0.000100
+Epoch time: 103.3s
+ Saved BEST model (Dice=0.9832)
+
+============================================================
+Epoch 4/150
+============================================================
+
+Train - Loss: 0.0522, Dice: 0.9480, IoU: 0.9027
+Val   - Loss: 0.0529, Dice: 0.9818, IoU: 0.9660
+LR: 0.000100
+Epoch time: 102.2s
+
+============================================================
+Epoch 5/150
+============================================================
+
+Train - Loss: 0.0424, Dice: 0.9592, IoU: 0.9227
+Val   - Loss: 0.0502, Dice: 0.9805, IoU: 0.9636
+LR: 0.000100
+Epoch time: 100.9s
+
+============================================================
+Epoch 6/150
+============================================================
+
+Train - Loss: 0.0370, Dice: 0.9662, IoU: 0.9356
+Val   - Loss: 0.0434, Dice: 0.9833, IoU: 0.9687
+LR: 0.000100
+Epoch time: 100.5s
+
+============================================================
+Epoch 7/150
+============================================================
+
+Train - Loss: 0.0314, Dice: 0.9705, IoU: 0.9445
+Val   - Loss: 0.0374, Dice: 0.9835, IoU: 0.9690
+LR: 0.000099
+Epoch time: 101.1s
+ Saved BEST model (Dice=0.9835)
+
+============================================================
+Epoch 8/150
+============================================================
+
+Train - Loss: 0.0290, Dice: 0.9741, IoU: 0.9508
+Val   - Loss: 0.0401, Dice: 0.9832, IoU: 0.9688
+LR: 0.000099
+Epoch time: 100.7s
+EarlyStopping: 1/25
+
+============================================================
+Epoch 9/150
+============================================================
+
+Train - Loss: 0.0264, Dice: 0.9765, IoU: 0.9551
+Val   - Loss: 0.0421, Dice: 0.9813, IoU: 0.9653
+LR: 0.000099
+Epoch time: 100.8s
+EarlyStopping: 2/25
+
+============================================================
+Epoch 10/150
+============================================================
+
+Train - Loss: 0.0251, Dice: 0.9782, IoU: 0.9585
+Val   - Loss: 0.0415, Dice: 0.9831, IoU: 0.9684
+LR: 0.000099
+Epoch time: 101.1s
+EarlyStopping: 3/25
+
+============================================================
+Epoch 11/150
+============================================================
+
+Train - Loss: 0.0233, Dice: 0.9801, IoU: 0.9620
+Val   - Loss: 0.0402, Dice: 0.9834, IoU: 0.9693
+LR: 0.000099
+Epoch time: 100.8s
+EarlyStopping: 4/25
+
+============================================================
+Epoch 12/150
+============================================================
+
+Train - Loss: 0.0228, Dice: 0.9812, IoU: 0.9636
+Val   - Loss: 0.0344, Dice: 0.9848, IoU: 0.9714
+LR: 0.000098
+Epoch time: 101.0s
+ Saved BEST model (Dice=0.9848)
+
+============================================================
+Epoch 13/150
+============================================================
+
+Train - Loss: 0.0207, Dice: 0.9823, IoU: 0.9661
+Val   - Loss: 0.0324, Dice: 0.9838, IoU: 0.9697
+LR: 0.000098
+Epoch time: 101.2s
+
+============================================================
+Epoch 14/150
+============================================================
+
+Train - Loss: 0.0203, Dice: 0.9832, IoU: 0.9678
+Val   - Loss: 0.0342, Dice: 0.9852, IoU: 0.9724
+LR: 0.000098
+Epoch time: 102.7s
+ Saved BEST model (Dice=0.9852)
+EarlyStopping: 1/25
+
+============================================================
+Epoch 15/150
+============================================================
+
+Train - Loss: 0.0191, Dice: 0.9840, IoU: 0.9694
+Val   - Loss: 0.0394, Dice: 0.9846, IoU: 0.9714
+LR: 0.000098
+Epoch time: 99.5s
+EarlyStopping: 2/25
+
+============================================================
+Epoch 16/150
+============================================================
+
+Train - Loss: 0.0191, Dice: 0.9837, IoU: 0.9693
+Val   - Loss: 0.0305, Dice: 0.9857, IoU: 0.9733
+LR: 0.000097
+Epoch time: 100.1s
+ Saved BEST model (Dice=0.9857)
+
+============================================================
+Epoch 17/150
+============================================================
+
+Train - Loss: 0.0187, Dice: 0.9844, IoU: 0.9702
+Val   - Loss: 0.0372, Dice: 0.9830, IoU: 0.9690
+LR: 0.000097
+Epoch time: 100.7s
+EarlyStopping: 1/25
+
+============================================================
+Epoch 18/150
+============================================================
+
+Train - Loss: 0.0170, Dice: 0.9857, IoU: 0.9727
+Val   - Loss: 0.0378, Dice: 0.9827, IoU: 0.9683
+LR: 0.000096
+Epoch time: 100.5s
+EarlyStopping: 2/25
+
+============================================================
+Epoch 19/150
+============================================================
+
+Train - Loss: 0.0169, Dice: 0.9854, IoU: 0.9725
+Val   - Loss: 0.0412, Dice: 0.9828, IoU: 0.9686
+LR: 0.000096
+Epoch time: 100.4s
+EarlyStopping: 3/25
+
+============================================================
+Epoch 20/150
+============================================================
+
+Train - Loss: 0.0161, Dice: 0.9866, IoU: 0.9743
+Val   - Loss: 0.0436, Dice: 0.9828, IoU: 0.9685
+LR: 0.000096
+Epoch time: 100.2s
+EarlyStopping: 4/25
+
+============================================================
+Epoch 21/150
+============================================================
+
+Train - Loss: 0.0151, Dice: 0.9873, IoU: 0.9757
+Val   - Loss: 0.0424, Dice: 0.9826, IoU: 0.9681
+LR: 0.000095
+Epoch time: 100.1s
+EarlyStopping: 5/25
+
+============================================================
+Epoch 22/150
+============================================================
+
+Train - Loss: 0.0158, Dice: 0.9870, IoU: 0.9752
+Val   - Loss: 0.0404, Dice: 0.9836, IoU: 0.9698
+LR: 0.000095
+Epoch time: 100.2s
+EarlyStopping: 6/25
+
+============================================================
+Epoch 23/150
+============================================================
+
+Train - Loss: 0.0151, Dice: 0.9876, IoU: 0.9762
+Val   - Loss: 0.0431, Dice: 0.9821, IoU: 0.9673
+LR: 0.000094
+Epoch time: 100.4s
+EarlyStopping: 7/25
+
+============================================================
+Epoch 24/150
+============================================================
+
+Train - Loss: 0.0151, Dice: 0.9874, IoU: 0.9758
+Val   - Loss: 0.0378, Dice: 0.9847, IoU: 0.9715
+LR: 0.000094
+Epoch time: 99.0s
+EarlyStopping: 8/25
+
+============================================================
+Epoch 25/150
+============================================================
+
+Train - Loss: 0.0142, Dice: 0.9877, IoU: 0.9770
+Val   - Loss: 0.0407, Dice: 0.9851, IoU: 0.9723
+LR: 0.000093
+Epoch time: 100.3s
+EarlyStopping: 9/25
+
+============================================================
+Epoch 26/150
+============================================================
+
+Train - Loss: 0.0138, Dice: 0.9885, IoU: 0.9780
+Val   - Loss: 0.0354, Dice: 0.9856, IoU: 0.9733
+LR: 0.000093
+Epoch time: 100.7s
+EarlyStopping: 10/25
+
+============================================================
+Epoch 27/150
+============================================================
+
+Train - Loss: 0.0142, Dice: 0.9885, IoU: 0.9779
+Val   - Loss: 0.0415, Dice: 0.9845, IoU: 0.9713
+LR: 0.000092
+Epoch time: 100.4s
+EarlyStopping: 11/25
+
+============================================================
+Epoch 28/150
+============================================================
+
+Train - Loss: 0.0138, Dice: 0.9885, IoU: 0.9780
+Val   - Loss: 0.0400, Dice: 0.9846, IoU: 0.9713
+LR: 0.000092
+Epoch time: 100.7s
+EarlyStopping: 12/25
+
+============================================================
+Epoch 29/150
+============================================================
+
+Train - Loss: 0.0137, Dice: 0.9883, IoU: 0.9781
+Val   - Loss: 0.0400, Dice: 0.9828, IoU: 0.9687
+LR: 0.000091
+Epoch time: 100.6s
+EarlyStopping: 13/25
+
+============================================================
+Epoch 30/150
+============================================================
+
+Train - Loss: 0.0124, Dice: 0.9896, IoU: 0.9800
+Val   - Loss: 0.0393, Dice: 0.9847, IoU: 0.9718
+LR: 0.000090
+Epoch time: 100.1s
+EarlyStopping: 14/25
+
+============================================================
+Epoch 31/150
+============================================================
+
+Train - Loss: 0.0144, Dice: 0.9885, IoU: 0.9781
+Val   - Loss: 0.0428, Dice: 0.9838, IoU: 0.9702
+LR: 0.000090
+Epoch time: 100.3s
+EarlyStopping: 15/25
+
+============================================================
+Epoch 32/150
+============================================================
+
+Train - Loss: 0.0130, Dice: 0.9892, IoU: 0.9793
+Val   - Loss: 0.0356, Dice: 0.9843, IoU: 0.9707
+LR: 0.000089
+Epoch time: 100.2s
+EarlyStopping: 16/25
+
+============================================================
+Epoch 33/150
+============================================================
+
+Train - Loss: 0.0125, Dice: 0.9896, IoU: 0.9800
+Val   - Loss: 0.0451, Dice: 0.9834, IoU: 0.9694
+LR: 0.000089
+Epoch time: 100.8s
+EarlyStopping: 17/25
+
+============================================================
+Epoch 34/150
+============================================================
+
+Train - Loss: 0.0125, Dice: 0.9896, IoU: 0.9801
+Val   - Loss: 0.0468, Dice: 0.9826, IoU: 0.9681
+LR: 0.000088
+Epoch time: 105.4s
+EarlyStopping: 18/25
+
+============================================================
+Epoch 35/150
+============================================================
+
+Train - Loss: 0.0122, Dice: 0.9900, IoU: 0.9807
+Val   - Loss: 0.0434, Dice: 0.9848, IoU: 0.9718
+LR: 0.000087
+Epoch time: 105.9s
+EarlyStopping: 19/25
+
+============================================================
+Epoch 36/150
+============================================================
+
+Train - Loss: 0.0124, Dice: 0.9898, IoU: 0.9804
+Val   - Loss: 0.0466, Dice: 0.9830, IoU: 0.9687
+LR: 0.000086
+Epoch time: 104.4s
+EarlyStopping: 20/25
+
+============================================================
+Epoch 37/150
+============================================================
+
+Train - Loss: 0.0120, Dice: 0.9901, IoU: 0.9810
+Val   - Loss: 0.0480, Dice: 0.9849, IoU: 0.9721
+LR: 0.000086
+Epoch time: 102.7s
+EarlyStopping: 21/25
+
+============================================================
+Epoch 38/150
+============================================================
+
+Train - Loss: 0.0129, Dice: 0.9895, IoU: 0.9799
+Val   - Loss: 0.0432, Dice: 0.9836, IoU: 0.9697
+LR: 0.000085
+Epoch time: 103.3s
+EarlyStopping: 22/25
+
+============================================================
+Epoch 39/150
+============================================================
+
+Train - Loss: 0.0119, Dice: 0.9902, IoU: 0.9813
+Val   - Loss: 0.0453, Dice: 0.9843, IoU: 0.9711
+LR: 0.000084
+Epoch time: 105.0s
+EarlyStopping: 23/25
+
+============================================================
+Epoch 40/150
+============================================================
+
+Train - Loss: 0.0119, Dice: 0.9900, IoU: 0.9810
+Val   - Loss: 0.0486, Dice: 0.9819, IoU: 0.9672
+LR: 0.000083
+Epoch time: 102.3s
+EarlyStopping: 24/25
+
+============================================================
+Epoch 41/150
+============================================================
+
+Train - Loss: 0.0111, Dice: 0.9907, IoU: 0.9822
+Val   - Loss: 0.0521, Dice: 0.9835, IoU: 0.9702
+LR: 0.000083
+Epoch time: 107.8s
+EarlyStopping: 25/25
+
+ Early stop at epoch 41
+
+============================================================
+Training Complete!
+Best Val Dice: 0.9857
+Total time: 70.6 minutes
+============================================================
+
+================================================================================
+Training Session Started: 2025-12-18 03:27:22
+================================================================================
+
+================================================================================
+Training Session Started: 2025-12-18 03:27:12
+================================================================================
+
+================================================================================
+Training Session Started: 2025-12-18 03:27:15
+================================================================================
+
+================================================================================
+Training Session Started: 2025-12-18 03:27:19
+================================================================================
+
+********************************************************************************
+Training Session Started!
+********************************************************************************
+
+********************************************************************************
+Training Session Started!
+********************************************************************************
+
+********************************************************************************
+Training Session Started!
+********************************************************************************
+
+********************************************************************************
+Training Session Started!
+********************************************************************************
+
+********************************************************************************
+Training Session Started!
+********************************************************************************
+
+Device: cuda
+GPU: NVIDIA GeForce RTX 3050 Laptop GPU
+VRAM: 4.0 GB
+Hyperparameters:
+  Encoder: se_resnext50_32x4d
+  Batch Size: 16
+  Learning Rate: 0.0001
+  Image Size: 256
+  Max Epochs: 150
+  Workers: 4
+  Early Stop Patience: 25
+
+Searching in: Data/Fruit/Train
+Found 30 fruit folders: ['Apple_Gala', 'Apple_Golden Delicious', 'Avocado', 'Banana', 'Berry', 'Burmese Grape', 'Carambola', 'Date Palm', 'Dragon', 'Elephant Apple', 'Grape', 'Green Coconut', 'Guava', 'Hog Plum', 'Kiwi', 'Lichi', 'Malta', 'Mango Golden Queen', 'Mango_Alphonso', 'Mango_Amrapali', 'Mango_Bari', 'Mango_Himsagar', 'Olive', 'Orange', 'Palm', 'Persimmon', 'Pineapple', 'Pomegranate', 'Watermelon', 'White Pear']
+  Apple_Gala: 58 pairs
+  Apple_Golden Delicious: 50 pairs
+  Avocado: 65 pairs
+  Banana: 75 pairs
+  Berry: 55 pairs
+  Burmese Grape: 71 pairs
+  Carambola: 93 pairs
+  Date Palm: 140 pairs
+  Dragon: 89 pairs
+  Elephant Apple: 74 pairs
+  Grape: 75 pairs
+  Green Coconut: 30 pairs
+  Guava: 48 pairs
+  Hog Plum: 84 pairs
+  Kiwi: 54 pairs
+  Lichi: 41 pairs
+  Malta: 43 pairs
+  Mango Golden Queen: 9 pairs
+  Mango_Alphonso: 38 pairs
+  Mango_Amrapali: 60 pairs
+  Mango_Bari: 50 pairs
+  Mango_Himsagar: 78 pairs
+  Olive: 44 pairs
+  Orange: 76 pairs
+  Palm: 52 pairs
+  Persimmon: 26 pairs
+  Pineapple: 58 pairs
+  Pomegranate: 54 pairs
+  Watermelon: 35 pairs
+  White Pear: 34 pairs
+Total loaded: 1759 pairs
+
+Class imbalance (pos_weight): 1.50
+
+Searching in: Data/Fruit/Validation
+Found 30 fruit folders: ['Apple_Gala', 'Apple_Golden Delicious', 'Avocado', 'Banana', 'Berry', 'Burmese Grape', 'Carambola', 'Date Palm', 'Dragon', 'Elephant Apple', 'Grape', 'Green Coconut', 'Guava', 'Hog Plum', 'Kiwi', 'Lichi', 'Malta', 'Mango Golden Queen', 'Mango_Alphonso', 'Mango_Amrapali', 'Mango_Bari', 'Mango_Himsagar', 'Olive', 'Orange', 'Palm', 'Persimmon', 'Pineapple', 'Pomegranate', 'Watermelon', 'White Pear']
+  Apple_Gala: 5 pairs
+  Apple_Golden Delicious: 5 pairs
+  Avocado: 5 pairs
+  Banana: 5 pairs
+  Berry: 5 pairs
+  Burmese Grape: 5 pairs
+  Carambola: 5 pairs
+  Date Palm: 5 pairs
+  Dragon: 5 pairs
+  Elephant Apple: 5 pairs
+  Grape: 5 pairs
+  Green Coconut: 5 pairs
+  Guava: 5 pairs
+  Hog Plum: 5 pairs
+  Kiwi: 5 pairs
+  Lichi: 5 pairs
+  Malta: 5 pairs
+  Mango Golden Queen: 5 pairs
+  Mango_Alphonso: 5 pairs
+  Mango_Amrapali: 5 pairs
+  Mango_Bari: 5 pairs
+  Mango_Himsagar: 5 pairs
+  Olive: 5 pairs
+  Orange: 5 pairs
+  Palm: 5 pairs
+  Persimmon: 5 pairs
+  Pineapple: 5 pairs
+  Pomegranate: 5 pairs
+  Watermelon: 5 pairs
+  White Pear: 5 pairs
+Total loaded: 150 pairs
+
+Class imbalance (pos_weight): 1.63
+
+Model: 34,523,969 total params, 34,523,969 trainable
+
+
+============================================================
+Epoch 1/150
+============================================================
+
+Train - Loss: 0.2893, Dice: 0.7131, IoU: 0.5688
+Val   - Loss: 0.1803, Dice: 0.9680, IoU: 0.9397
+LR: 0.000100
+Epoch time: 69.4s
+ Saved BEST model (Dice=0.9680)
+
+============================================================
+Epoch 2/150
+============================================================
+
+Train - Loss: 0.1451, Dice: 0.8402, IoU: 0.7318
+Val   - Loss: 0.1183, Dice: 0.9771, IoU: 0.9570
+LR: 0.000100
+Epoch time: 31.8s
+ Saved BEST model (Dice=0.9771)
+
+============================================================
+Epoch 3/150
+============================================================
+
+Train - Loss: 0.0985, Dice: 0.8901, IoU: 0.8064
+Val   - Loss: 0.0858, Dice: 0.9817, IoU: 0.9663
+LR: 0.000100
+Epoch time: 32.3s
+ Saved BEST model (Dice=0.9817)
+
+============================================================
+Epoch 4/150
+============================================================
+
+Train - Loss: 0.0737, Dice: 0.9190, IoU: 0.8529
+Val   - Loss: 0.0643, Dice: 0.9835, IoU: 0.9690
+LR: 0.000100
+Epoch time: 34.3s
+ Saved BEST model (Dice=0.9835)
+
+============================================================
+Epoch 5/150
+============================================================
+
+Train - Loss: 0.0590, Dice: 0.9367, IoU: 0.8830
+Val   - Loss: 0.0577, Dice: 0.9849, IoU: 0.9716
+LR: 0.000100
+Epoch time: 32.7s
+ Saved BEST model (Dice=0.9849)
+
+============================================================
+Epoch 6/150
+============================================================
+
+Train - Loss: 0.0482, Dice: 0.9496, IoU: 0.9056
+Val   - Loss: 0.0538, Dice: 0.9815, IoU: 0.9666
+LR: 0.000100
+Epoch time: 31.0s
+
+============================================================
+Epoch 7/150
+============================================================
+
+Train - Loss: 0.0413, Dice: 0.9576, IoU: 0.9199
+Val   - Loss: 0.0449, Dice: 0.9842, IoU: 0.9706
+LR: 0.000099
+Epoch time: 31.7s
+
+============================================================
+Epoch 8/150
+============================================================
+
+Train - Loss: 0.0357, Dice: 0.9642, IoU: 0.9318
+Val   - Loss: 0.0387, Dice: 0.9863, IoU: 0.9745
+LR: 0.000099
+Epoch time: 34.1s
+ Saved BEST model (Dice=0.9863)
+
+============================================================
+Epoch 9/150
+============================================================
+
+Train - Loss: 0.0305, Dice: 0.9698, IoU: 0.9421
+Val   - Loss: 0.0420, Dice: 0.9837, IoU: 0.9701
+LR: 0.000099
+Epoch time: 32.1s
+EarlyStopping: 1/25
+
+============================================================
+Epoch 10/150
+============================================================
+
+Train - Loss: 0.0270, Dice: 0.9736, IoU: 0.9490
+Val   - Loss: 0.0393, Dice: 0.9842, IoU: 0.9706
+LR: 0.000099
+Epoch time: 31.7s
+EarlyStopping: 2/25
+
+============================================================
+Epoch 11/150
+============================================================
+
+Train - Loss: 0.0255, Dice: 0.9758, IoU: 0.9533
+Val   - Loss: 0.0378, Dice: 0.9852, IoU: 0.9726
+LR: 0.000099
+Epoch time: 31.2s
+EarlyStopping: 3/25
+
+============================================================
+Epoch 12/150
+============================================================
+
+Train - Loss: 0.0243, Dice: 0.9774, IoU: 0.9564
+Val   - Loss: 0.0383, Dice: 0.9840, IoU: 0.9705
+LR: 0.000098
+Epoch time: 31.4s
+EarlyStopping: 4/25
+
+============================================================
+Epoch 13/150
+============================================================
+
+Train - Loss: 0.0225, Dice: 0.9796, IoU: 0.9605
+Val   - Loss: 0.0411, Dice: 0.9839, IoU: 0.9702
+LR: 0.000098
+Epoch time: 32.3s
+EarlyStopping: 5/25
+
+============================================================
+Epoch 14/150
+============================================================
+
+Train - Loss: 0.0216, Dice: 0.9808, IoU: 0.9628
+Val   - Loss: 0.0320, Dice: 0.9868, IoU: 0.9752
+LR: 0.000098
+Epoch time: 31.7s
+ Saved BEST model (Dice=0.9868)
+
+============================================================
+Epoch 15/150
+============================================================
+
+Train - Loss: 0.0194, Dice: 0.9828, IoU: 0.9666
+Val   - Loss: 0.0352, Dice: 0.9846, IoU: 0.9718
+LR: 0.000098
+Epoch time: 31.4s
+EarlyStopping: 1/25
+
+============================================================
+Epoch 16/150
+============================================================
+
+Train - Loss: 0.0184, Dice: 0.9837, IoU: 0.9682
+Val   - Loss: 0.0387, Dice: 0.9838, IoU: 0.9703
+LR: 0.000097
+Epoch time: 31.1s
+EarlyStopping: 2/25
+
+============================================================
+Epoch 17/150
+============================================================
+
+Train - Loss: 0.0179, Dice: 0.9844, IoU: 0.9696
+Val   - Loss: 0.0373, Dice: 0.9839, IoU: 0.9706
+LR: 0.000097
+Epoch time: 31.1s
+EarlyStopping: 3/25
+
+============================================================
+Epoch 18/150
+============================================================
+
+Train - Loss: 0.0160, Dice: 0.9860, IoU: 0.9726
+Val   - Loss: 0.0356, Dice: 0.9838, IoU: 0.9704
+LR: 0.000096
+Epoch time: 31.3s
+EarlyStopping: 4/25
+
+============================================================
+Epoch 19/150
+============================================================
+
+Train - Loss: 0.0162, Dice: 0.9861, IoU: 0.9729
+Val   - Loss: 0.0344, Dice: 0.9841, IoU: 0.9710
+LR: 0.000096
+Epoch time: 31.0s
+EarlyStopping: 5/25
+
+============================================================
+Epoch 20/150
+============================================================
+
+Train - Loss: 0.0156, Dice: 0.9867, IoU: 0.9741
+Val   - Loss: 0.0341, Dice: 0.9857, IoU: 0.9737
+LR: 0.000096
+Epoch time: 31.1s
+EarlyStopping: 6/25
+
+============================================================
+Epoch 21/150
+============================================================
+
+Train - Loss: 0.0146, Dice: 0.9876, IoU: 0.9758
+Val   - Loss: 0.0393, Dice: 0.9839, IoU: 0.9706
+LR: 0.000095
+Epoch time: 31.2s
+EarlyStopping: 7/25
+
+============================================================
+Epoch 22/150
+============================================================
+
+Train - Loss: 0.0137, Dice: 0.9883, IoU: 0.9771
+Val   - Loss: 0.0401, Dice: 0.9844, IoU: 0.9714
+LR: 0.000095
+Epoch time: 31.5s
+EarlyStopping: 8/25
+
+============================================================
+Epoch 23/150
+============================================================
+
+Train - Loss: 0.0146, Dice: 0.9880, IoU: 0.9766
+Val   - Loss: 0.0343, Dice: 0.9849, IoU: 0.9723
+LR: 0.000094
+Epoch time: 30.9s
+EarlyStopping: 9/25
+
+============================================================
+Epoch 24/150
+============================================================
+
+Train - Loss: 0.0129, Dice: 0.9889, IoU: 0.9783
+Val   - Loss: 0.0380, Dice: 0.9840, IoU: 0.9707
+LR: 0.000094
+Epoch time: 30.9s
+EarlyStopping: 10/25
+
+============================================================
+Epoch 25/150
+============================================================
+
+Train - Loss: 0.0132, Dice: 0.9891, IoU: 0.9788
+Val   - Loss: 0.0368, Dice: 0.9850, IoU: 0.9724
+LR: 0.000093
+Epoch time: 31.0s
+EarlyStopping: 11/25
+
+============================================================
+Epoch 26/150
+============================================================
+
+Train - Loss: 0.0130, Dice: 0.9892, IoU: 0.9789
+Val   - Loss: 0.0417, Dice: 0.9831, IoU: 0.9686
+LR: 0.000093
+Epoch time: 31.0s
+EarlyStopping: 12/25
+
+============================================================
+Epoch 27/150
+============================================================
+
+Train - Loss: 0.0123, Dice: 0.9897, IoU: 0.9799
+Val   - Loss: 0.0390, Dice: 0.9847, IoU: 0.9719
+LR: 0.000092
+Epoch time: 30.9s
+EarlyStopping: 13/25
+
+============================================================
+Epoch 28/150
+============================================================
+
+Train - Loss: 0.0119, Dice: 0.9902, IoU: 0.9808
+Val   - Loss: 0.0305, Dice: 0.9876, IoU: 0.9769
+LR: 0.000092
+Epoch time: 31.1s
+ Saved BEST model (Dice=0.9876)
+
+============================================================
+Epoch 29/150
+============================================================
+
+Train - Loss: 0.0108, Dice: 0.9910, IoU: 0.9823
+Val   - Loss: 0.0412, Dice: 0.9835, IoU: 0.9699
+LR: 0.000091
+Epoch time: 31.0s
+EarlyStopping: 1/25
+
+============================================================
+Epoch 30/150
+============================================================
+
+Train - Loss: 0.0100, Dice: 0.9916, IoU: 0.9833
+Val   - Loss: 0.0364, Dice: 0.9854, IoU: 0.9730
+LR: 0.000090
+Epoch time: 31.1s
+EarlyStopping: 2/25
+
+============================================================
+Epoch 31/150
+============================================================
+
+Train - Loss: 0.0098, Dice: 0.9918, IoU: 0.9838
+Val   - Loss: 0.0495, Dice: 0.9814, IoU: 0.9667
+LR: 0.000090
+Epoch time: 31.8s
+EarlyStopping: 3/25
+
+============================================================
+Epoch 32/150
+============================================================
+
+Train - Loss: 0.0100, Dice: 0.9917, IoU: 0.9837
+Val   - Loss: 0.0443, Dice: 0.9830, IoU: 0.9694
+LR: 0.000089
+Epoch time: 31.8s
+EarlyStopping: 4/25
+
+============================================================
+Epoch 33/150
+============================================================
+
+Train - Loss: 0.0096, Dice: 0.9920, IoU: 0.9843
+Val   - Loss: 0.0380, Dice: 0.9855, IoU: 0.9733
+LR: 0.000089
+Epoch time: 31.5s
+EarlyStopping: 5/25
+
+============================================================
+Epoch 34/150
+============================================================
+
+Train - Loss: 0.0095, Dice: 0.9922, IoU: 0.9846
+Val   - Loss: 0.0418, Dice: 0.9849, IoU: 0.9723
+LR: 0.000088
+Epoch time: 31.3s
+EarlyStopping: 6/25
+
+============================================================
+Epoch 35/150
+============================================================
+
+Train - Loss: 0.0094, Dice: 0.9924, IoU: 0.9850
+Val   - Loss: 0.0387, Dice: 0.9852, IoU: 0.9729
+LR: 0.000087
+Epoch time: 31.7s
+EarlyStopping: 7/25
+
+============================================================
+Epoch 36/150
+============================================================
+
+Train - Loss: 0.0107, Dice: 0.9918, IoU: 0.9839
+Val   - Loss: 0.0372, Dice: 0.9838, IoU: 0.9703
+LR: 0.000086
+Epoch time: 31.8s
+EarlyStopping: 8/25
+
+============================================================
+Epoch 37/150
+============================================================
+
+Train - Loss: 0.0101, Dice: 0.9920, IoU: 0.9842
+Val   - Loss: 0.0360, Dice: 0.9865, IoU: 0.9750
+LR: 0.000086
+Epoch time: 31.5s
+EarlyStopping: 9/25
+
+============================================================
+Epoch 38/150
+============================================================
+
+Train - Loss: 0.0086, Dice: 0.9929, IoU: 0.9861
+Val   - Loss: 0.0405, Dice: 0.9868, IoU: 0.9756
+LR: 0.000085
+Epoch time: 31.7s
+EarlyStopping: 10/25
+
+============================================================
+Epoch 39/150
+============================================================
+
+Train - Loss: 0.0102, Dice: 0.9919, IoU: 0.9841
+Val   - Loss: 0.0413, Dice: 0.9851, IoU: 0.9728
+LR: 0.000084
+Epoch time: 31.6s
+EarlyStopping: 11/25
+
+============================================================
+Epoch 40/150
+============================================================
+
+Train - Loss: 0.0091, Dice: 0.9927, IoU: 0.9856
+Val   - Loss: 0.0454, Dice: 0.9836, IoU: 0.9703
+LR: 0.000083
+Epoch time: 32.1s
+EarlyStopping: 12/25
+
+============================================================
+Epoch 41/150
+============================================================
+
+Train - Loss: 0.0087, Dice: 0.9930, IoU: 0.9862
+Val   - Loss: 0.0470, Dice: 0.9840, IoU: 0.9709
+LR: 0.000083
+Epoch time: 32.0s
+EarlyStopping: 13/25
+
+============================================================
+Epoch 42/150
+============================================================
+
+Train - Loss: 0.0098, Dice: 0.9925, IoU: 0.9854
+Val   - Loss: 0.0365, Dice: 0.9871, IoU: 0.9765
+LR: 0.000082
+Epoch time: 31.4s
+EarlyStopping: 14/25
+
+============================================================
+Epoch 43/150
+============================================================
+
+Train - Loss: 0.0089, Dice: 0.9928, IoU: 0.9859
+Val   - Loss: 0.0437, Dice: 0.9845, IoU: 0.9718
+LR: 0.000081
+Epoch time: 31.2s
+EarlyStopping: 15/25
+
+============================================================
+Epoch 44/150
+============================================================
+
+Train - Loss: 0.0099, Dice: 0.9924, IoU: 0.9851
+Val   - Loss: 0.0435, Dice: 0.9831, IoU: 0.9693
+LR: 0.000080
+Epoch time: 31.8s
+EarlyStopping: 16/25
+
+============================================================
+Epoch 45/150
+============================================================
+
+Train - Loss: 0.0083, Dice: 0.9933, IoU: 0.9867
+Val   - Loss: 0.0451, Dice: 0.9839, IoU: 0.9707
+LR: 0.000079
+Epoch time: 31.5s
+EarlyStopping: 17/25
+
+============================================================
+Epoch 46/150
+============================================================
+
+Train - Loss: 0.0081, Dice: 0.9935, IoU: 0.9872
+Val   - Loss: 0.0403, Dice: 0.9862, IoU: 0.9744
+LR: 0.000079
+Epoch time: 31.8s
+EarlyStopping: 18/25
+
+============================================================
+Epoch 47/150
+============================================================
+
+Train - Loss: 0.0078, Dice: 0.9937, IoU: 0.9875
+Val   - Loss: 0.0361, Dice: 0.9863, IoU: 0.9747
+LR: 0.000078
+Epoch time: 31.9s
+EarlyStopping: 19/25
+
+============================================================
+Epoch 48/150
+============================================================
+
+Train - Loss: 0.0079, Dice: 0.9937, IoU: 0.9875
+Val   - Loss: 0.0393, Dice: 0.9860, IoU: 0.9742
+LR: 0.000077
+Epoch time: 34.6s
+EarlyStopping: 20/25
+
+============================================================
+Epoch 49/150
+============================================================
+
+Train - Loss: 0.0075, Dice: 0.9940, IoU: 0.9881
+Val   - Loss: 0.0362, Dice: 0.9860, IoU: 0.9741
+LR: 0.000076
+Epoch time: 33.3s
+EarlyStopping: 21/25
+
+============================================================
+Epoch 50/150
+============================================================
+
+Train - Loss: 0.0083, Dice: 0.9936, IoU: 0.9875
+Val   - Loss: 0.0385, Dice: 0.9854, IoU: 0.9731
+LR: 0.000075
+Epoch time: 33.3s
+EarlyStopping: 22/25
+
+============================================================
+Epoch 51/150
+============================================================
+
+Train - Loss: 0.0075, Dice: 0.9939, IoU: 0.9879
+Val   - Loss: 0.0385, Dice: 0.9853, IoU: 0.9732
+LR: 0.000074
+Epoch time: 31.4s
+EarlyStopping: 23/25
+
+============================================================
+Epoch 52/150
+============================================================
+
+Train - Loss: 0.0072, Dice: 0.9943, IoU: 0.9887
+Val   - Loss: 0.0405, Dice: 0.9854, IoU: 0.9734
+LR: 0.000073
+Epoch time: 32.3s
+EarlyStopping: 24/25
+
+============================================================
+Epoch 53/150
+============================================================
+
+Train - Loss: 0.0070, Dice: 0.9945, IoU: 0.9891
+Val   - Loss: 0.0405, Dice: 0.9850, IoU: 0.9726
+LR: 0.000072
+Epoch time: 31.0s
+EarlyStopping: 25/25
+
+ Early stop at epoch 53
+
+============================================================
+Training Complete!
+Best Val Dice: 0.9876
+Total time: 28.8 minutes
+============================================================
+
+********************************************************************************
+Training Session Started!
+********************************************************************************
+
+********************************************************************************
+Training Session Started!
+********************************************************************************
+
+********************************************************************************
+Training Session Started!
+********************************************************************************
+
+********************************************************************************
+Training Session Started!
+********************************************************************************
+
+********************************************************************************
+Training Session Started!
+********************************************************************************
+
+********************************************************************************
+Training Session Started!
+********************************************************************************
+
+********************************************************************************
+Training Session Started!
+********************************************************************************
+
+********************************************************************************
+Training Session Started!
+********************************************************************************
+
